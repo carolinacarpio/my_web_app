@@ -1,0 +1,167 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;  /* Font Family */
+    line-height: 1.6;
+    background-color: #1b1b1b;  /* Dark background for contrast */
+    color: #ffffff;  /* White text color */
+}
+
+/* Container for better layout */
+.container {
+    max-width: 1200px;  /* Max width for larger screens */
+    margin: 0 auto;  /* Centering container */
+    padding: 20px;  /* Padding inside container */
+}
+
+/* Intro Section */
+.intro-section {
+    background-color: #000;  /* Black Background */
+    color: #fff;  /* White Font */
+    padding: 50px 20px;
+    text-align: center;  /* Center align intro text */
+}
+
+.intro-section .team-name {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #ffffff;  /* White color for the team name */
+}
+
+.intro-section .project-name {
+    font-size: 4rem;  /* Increased font size for project name */
+    margin-bottom: 10px;  /* Space below project name */
+    font-weight: 600;
+    color: #ffffff;  /* White color for project name */
+}
+
+/* White Line Separator */
+.separator {
+    border: none;
+    border-top: 2px solid white;  /* White line */
+    margin: 10px auto;  /* Space around the line */
+    width: 80%;  /* Line width */
+}
+
+.intro-section .empowerment-text {
+    font-size: 1.5rem;
+    margin: 20px 0;  /* Space above and below empowerment text */
+    font-weight: 400;
+}
+
+/* Explore Buttons */
+.explore-buttons {
+    margin: 20px 0; /* Space between buttons */
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center align buttons */
+}
+
+.explore-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, #4CAF50, #81C784);  /* Gradient background */
+    color: white;  /* Text color */
+    text-decoration: none;
+    border-radius: 30px;  /* More rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);  /* Subtle shadow */
+    transition: background 0.3s ease, transform 0.2s, box-shadow 0.3s;  /* Smooth transition */
+    font-size: 1.2rem;  /* Font size for buttons */
+    margin: 10px; /* Space between buttons */
+}
+
+.explore-btn:hover {
+    background: linear-gradient(90deg, #388E3C, #66BB6A);  /* Darker gradient on hover */
+    transform: translateY(-2px) scale(1.05);  /* Slight lift and scaling effect */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);  /* Increased shadow on hover */
+}
+
+/* "Let's Explore" Section */
+.explore-section {
+    background-color: #000;  /* Black Background */
+    color: #fff;  /* White Font */
+    padding: 50px 20px;
+    text-align: left;  /* Align text to the left */
+}
+
+.explore-section h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #ffffff;  /* White color for the heading */
+}
+
+.explore-image {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 800px; /* Maximum width */
+    margin: 20px auto; /* Center align image with some margin */
+}
+
+/* "About Cepheus" Section */
+.about-section {
+    padding: 50px 20px;
+    background-color: #000;  /* Black Background */
+    color: #fff;  /* White Font */
+    text-align: left; /* Align text to the left */
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #ffffff;  /* White color for the h2 heading */
+}
+
+.about-section h3 {
+    font-size: 2rem;
+    margin-top: 20px; /* Space above the team heading */
+    margin-bottom: 10px; /* Space below the team heading */
+    color: #ffffff;  /* White color for subheadings */
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+/* Team Section */
+.team-list {
+    list-style-type: none;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.team-list li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: white;
+}
+/* Fade-in Animation */
+.explore-section, .about-section {
+    opacity: 0; /* Start as invisible */
+    transition: opacity 0.6s ease-in-out; /* Transition for fade-in */
+}
+
+.explore-section.visible, .about-section.visible {
+    opacity: 1; /* Make visible when scrolled into view */
+}
+
+/* Button Click Animation */
+.explore-btn.clicked {
+    transform: scale(0.95); /* Slightly scale down */
+    transition: transform 0.1s ease; /* Quick transition */
+}
