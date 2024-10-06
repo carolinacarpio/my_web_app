@@ -26,7 +26,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Add click animation effect to explore buttons
+// Click animation effect to explore buttons
 document.querySelectorAll('.explore-btn').forEach(button => {
     button.addEventListener('mousedown', () => {
         button.classList.add('clicked');
@@ -36,5 +36,59 @@ document.querySelectorAll('.explore-btn').forEach(button => {
     });
     button.addEventListener('mouseleave', () => {
         button.classList.remove('clicked');
+    });
+});
+
+document.getElementById('btn-toi700d').addEventListener('click', () => {
+    fetch('/run-script', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ planet: 'TOI-700d' })
+    })
+    .then(response => response.text())
+    .then(data => {
+        console.log(data); // Handle success response
+        alert('Exploring TOI-700d!');
+    })
+    .catch(error => {
+        console.error('Error:', error); // Handle error response
+    });
+});
+
+document.getElementById('btn-ross128').addEventListener('click', () => {
+    fetch('/run-script', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ planet: 'Ross 128' })
+    })
+    .then(response => response.text())
+    .then(data => {
+        console.log(data);
+        alert('Exploring Ross 128!');
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+});
+
+document.getElementById('btn-trappist1e').addEventListener('click', () => {
+    fetch('/run-script', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ planet: 'TRAPPIST-1e' })
+    })
+    .then(response => response.text())
+    .then(data => {
+        console.log(data);
+        alert('Exploring TRAPPIST-1e!');
+    })
+    .catch(error => {
+        console.error('Error:', error);
     });
 });

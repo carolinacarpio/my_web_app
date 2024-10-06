@@ -45,7 +45,7 @@ body {
 .separator {
     border: none;
     border-top: 2px solid white;  /* White line */
-    margin: 10px auto;  /* Space around the line */
+    margin: 10px auto;
     width: 80%;  /* Line width */
 }
 
@@ -70,15 +70,14 @@ body {
     color: white;  /* Text color */
     text-decoration: none;
     border-radius: 30px;  /* More rounded corners */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);  /* Subtle shadow */
-    transition: background 0.3s ease, transform 0.2s, box-shadow 0.3s;  /* Smooth transition */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);  /* Shadow
     font-size: 1.2rem;  /* Font size for buttons */
     margin: 10px; /* Space between buttons */
 }
 
 .explore-btn:hover {
     background: linear-gradient(90deg, #388E3C, #66BB6A);  /* Darker gradient on hover */
-    transform: translateY(-2px) scale(1.05);  /* Slight lift and scaling effect */
+    transform: translateY(-2px) scale(1.05);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);  /* Increased shadow on hover */
 }
 
@@ -99,9 +98,9 @@ body {
 
 .explore-image {
     width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
+    height: auto;
     max-width: 800px; /* Maximum width */
-    margin: 20px auto; /* Center align image with some margin */
+    margin: 20px auto;
 }
 
 /* "About Cepheus" Section */
@@ -152,16 +151,16 @@ footer {
 }
 /* Fade-in Animation */
 .explore-section, .about-section {
-    opacity: 0; /* Start as invisible */
-    transition: opacity 0.6s ease-in-out; /* Transition for fade-in */
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
 }
 
 .explore-section.visible, .about-section.visible {
-    opacity: 1; /* Make visible when scrolled into view */
+    opacity: 1;
 }
 
 /* Button Click Animation */
 .explore-btn.clicked {
-    transform: scale(0.95); /* Slightly scale down */
-    transition: transform 0.1s ease; /* Quick transition */
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
 }
